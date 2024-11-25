@@ -6,6 +6,32 @@
 
 Esse repositório foi criado para armazenar os códigos, atividades e desafios do curso de Python da Asimov Academy
 
+## Módulos
+
+<h3>Módulo 01 - Conceitos Básicos</h3>
+<div align="center">
+    <table>
+        <thead>
+            <tr>
+                <th>Aula</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Modulo%2001%20-%20Conceitos%20Basicos/01%20-%20Fundamentos%20de%20Python">01 - Fundamentos de Python</a></td>
+            </tr>
+          <tr>
+                <td><a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Modulo%2001%20-%20Conceitos%20Basicos/02%20-%20Controle%20de%20Fluxo">02 - Controle de Fluxo</a></td>
+            </tr>
+          <tr>
+                <td><a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Modulo%2001%20-%20Conceitos%20Basicos/03%20-%20Sequencias%20e%20Loops">03 - Sequências e Loops</a></td>
+          </tr>
+            <tr>
+                <td><a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Modulo%2001%20-%20Conceitos%20Basicos/04%20-%20Dicionarios%20e%20Metodos">04 - Dicionários e Métodos</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 ## Licenças
 
@@ -15,4 +41,3 @@ Esse repositório foi criado para armazenar os códigos, atividades e desafios d
 ## Autores
 
 - [@annacteixeira](https://www.github.com/annacteixeira)
-
