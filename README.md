@@ -1,4 +1,3 @@
-
 # Python - Asimov Academy 👩‍💻
 
 <p align="center"><img alt="logo-python" src="https://ciracollege.com/wp-content/uploads/2020/11/How-to-Learn-Python.jpg" width=450/></p>
