@@ -1,6 +1,7 @@
 ipykernel
-openai==1.25.2
+openai>=1.0.0
 python-dotenv
 yfinance
 pandas
 matplotlib
+Pillow
