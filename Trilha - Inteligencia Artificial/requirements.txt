@@ -5,3 +5,8 @@ yfinance
 pandas
 matplotlib
 Pillow
+pyaudio
+SpeechRecognition
+sounddevice
+pygame
+path
