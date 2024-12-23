@@ -11,5 +11,8 @@ sounddevice
 pygame
 path
 streamlit
+streamlit_webrtc
 unidecode
 re
+moviepy
+pydub
