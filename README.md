@@ -102,6 +102,29 @@ Esse repositório foi criado para armazenar os códigos, atividades e desafios d
         </tr>
     </table>
 
+<table>
+  <h3>Criando Aplicativos Web com Streamlit</h2>  
+  <thead>
+    <tr>
+      <th>Repositório</th>
+      <th>GIF do Projeto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/02%20-%20Criando%20Aplicativos%20Web%20com%20Streamlit/01%20-%20Spotify%20App%20com%20Streamlit" target="_blank">Análise de dados do Spotify com o Streamlit</a></td>
+      <td><img src="https://via.placeholder.com/150" alt="GIF do Projeto 1"></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/02%20-%20Criando%20Aplicativos%20Web%20com%20Streamlit/02%20-%20Analise%20de%20Dados%20da%20FIFA" target="_blank">Análise de Dados da FIFA com Streamlit</a></td>
+      <td><img src="https://via.placeholder.com/150" alt="GIF do Projeto 2"></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/02%20-%20Criando%20Aplicativos%20Web%20com%20Streamlit/02%20-%20Analise%20de%20Dados%20da%20FIFA" target="_blank">Recriando o ChatGPT em Streamlit com a API da OpenAI</a></td>
+      <td><img src="https://via.placeholder.com/150" alt="GIF do Projeto 2"></td>
+    </tr>
+  </tbody>
+</table>
 
 </div>
 
