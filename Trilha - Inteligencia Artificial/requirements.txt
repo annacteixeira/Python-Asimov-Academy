@@ -12,3 +12,4 @@ pygame
 path
 streamlit
 unidecode
+re
