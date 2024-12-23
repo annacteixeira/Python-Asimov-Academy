@@ -5,6 +5,11 @@ import streamlit as st
 from utils_openai import retorna_resposta_modelo
 from utils_files import *
 
+st.set_page_config(
+    page_title='Home', 
+    page_icon='🤖', 
+    layout='wide'
+)
 # INICIALIZAÇÃO ========================================================
 
 def initialize():
