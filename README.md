@@ -62,7 +62,7 @@ Esse repositório foi criado para armazenar os códigos, atividades e desafios d
         </thead>
         <tr>
             <td>
-                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/01%20-%20Explorando%20a%20API%20da%20OpenAi/02%20-%20ChatBot%20Simples">01 - ChatBot Simples</a>
+                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/01%20-%20Explorando%20a%20API%20da%20OpenAi/01%20-%20Inicializando%20a%20Biblioteca%20da%20OpenAI">01 - Inicializando a Biblioteca da OpenAI</a>
             </td>
         </tr>
         <tr>
