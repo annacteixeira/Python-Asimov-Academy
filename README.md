@@ -120,7 +120,7 @@ Esse repositório foi criado para armazenar os códigos, atividades e desafios d
       <td><img src="https://github.com/annacteixeira/Python-Asimov-Academy/blob/main/Gifs%20-%20Projetos/Projeto%20FIFA.gif" alt="GIF do Projeto 2"></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/02%20-%20Criando%20Aplicativos%20Web%20com%20Streamlit/02%20-%20Analise%20de%20Dados%20da%20FIFA" target="_blank">Recriando o ChatGPT em Streamlit com a API da OpenAI</a></td>
+      <td><a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/02%20-%20Criando%20Aplicativos%20Web%20com%20Streamlit/02%20-%20Analise%20de%20Dados%20da%20FIFA" target="_blank">https://github.com/annacteixeira/Python-Asimov-Academy/blob/main/Gifs%20-%20Projetos/Projeto%20Chatbot%20-%20Streamlit.gif</a></td>
       <td><img src="https://via.placeholder.com/150" alt="GIF do Projeto 2"></td>
     </tr>
   </tbody>
