@@ -11,3 +11,4 @@ sounddevice
 pygame
 path
 streamlit
+unidecode
