@@ -1,4 +1,61 @@
-import os
+import streamlit as st
 import openai
-from dotenv import find_dotenv, load_dotenv
 
+openai_key = 'sua api key aqui'
+
+def retorna_resposta_modelo(mensagens, 
+                            openai_key, 
+                            modelo='gpt-3.5-turbo',
+                            temperatura=0,
+                            stream=False):
+    openai.api_key = openai_key
+    response = openai.chat.completions.create(
+        model = modelo,
+        messages = mensagens,
+        temperature = temperatura,
+        stream = stream
+    )
+    
+    return response
+
+def pagina_principal():
+    
+    if not 'mensagens' in st.session_state:
+        st.session_state.mensagens = []
+        
+    mensagens = st.session_state['mensagens']
+        
+    st.header('🤖 Chatbot', divider=True)
+
+    for mensagem in mensagens:
+        chat = st.chat_message(mensagem['role'])
+        chat.markdown(mensagem['content'])
+        
+    prompt = st.chat_input('Fale com o chat')
+    
+    if prompt:
+        nova_mensagem = {'role':'user', 'content':prompt}
+        chat = st.chat_message(nova_mensagem['role'])
+        chat.markdown(nova_mensagem['content'])
+        
+        mensagens.append(nova_mensagem)
+        
+        chat = st.chat_message('assistant')
+        placeholder = chat.empty()
+        placeholder.markdown('▌')
+        resposta_completa = ''
+        
+        respostas = retorna_resposta_modelo(mensagens, openai_key, stream=True)
+        
+        for resposta in respostas:
+            if resposta.choices[0].delta.content:
+                resposta_completa += resposta.choices[0].delta.content
+            placeholder.markdown(resposta_completa + '▌')
+        placeholder.markdown(resposta_completa)
+        nova_mensagem = {'role':'assistant', 'content':resposta_completa}
+        mensagens.append(nova_mensagem)
+        
+        
+        st.session_state['mensagens'] = mensagens
+        
+pagina_principal()
