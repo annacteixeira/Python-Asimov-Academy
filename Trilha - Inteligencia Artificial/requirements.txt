@@ -10,3 +10,4 @@ SpeechRecognition
 sounddevice
 pygame
 path
+streamlit
