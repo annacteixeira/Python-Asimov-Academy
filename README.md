@@ -113,7 +113,7 @@ Esse repositório foi criado para armazenar os códigos, atividades e desafios d
   <tbody>
     <tr>
       <td><a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/02%20-%20Criando%20Aplicativos%20Web%20com%20Streamlit/01%20-%20Spotify%20App%20com%20Streamlit" target="_blank">Análise de dados do Spotify com o Streamlit</a></td>
-      <td><img src="https://via.placeholder.com/150" alt="GIF do Projeto 1"></td>
+      <td><img src="https://github.com/annacteixeira/Python-Asimov-Academy/blob/main/Gifs%20-%20Projetos/Projeto%20Spotify.gif" alt="GIF do Projeto"></td>
     </tr>
     <tr>
       <td><a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/02%20-%20Criando%20Aplicativos%20Web%20com%20Streamlit/02%20-%20Analise%20de%20Dados%20da%20FIFA" target="_blank">Análise de Dados da FIFA com Streamlit</a></td>
