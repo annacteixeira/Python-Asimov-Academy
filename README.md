@@ -106,7 +106,7 @@ Esse repositório foi criado para armazenar os códigos, atividades e desafios d
   <h3>Criando Aplicativos Web com Streamlit</h2>  
   <thead>
     <tr>
-      <th>Repositório</th>
+      <th>Resultado</th>
       <th>GIF do Projeto</th>
     </tr>
   </thead>
