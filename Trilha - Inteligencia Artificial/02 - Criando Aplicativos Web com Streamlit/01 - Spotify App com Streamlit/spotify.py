@@ -1,13 +1,21 @@
 import streamlit as st
 import pandas as pd
+import time
 
 st.set_page_config(
     page_title='Spotify',
     layout='wide'
 )
 
-df = pd.read_csv('01 Spotify.csv')
-st.session_state['df_spotify'] = df
+@st.cache_data
+def load_data():
+    df = pd.read_csv("01 Spotify.csv")
+    # Exemplo de operação pesada para utilização do cacheamento
+    time.sleep(5)
+    return df
+
+df = load_data()
+st.session_state["df_spotify"] = df
 
 df.set_index('Track', inplace=True) # mudando a variável do eixo x
 
@@ -28,4 +36,3 @@ col1, col2 = st.columns([0.7, 0.3])
 col1.bar_chart(df_filtered_album['Stream'])
 col2.line_chart(df_filtered_album['Danceability'])
 
-# Cacheamento e multipages
