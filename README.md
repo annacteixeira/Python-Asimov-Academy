@@ -62,12 +62,12 @@ Esse repositório foi criado para armazenar os códigos, atividades e desafios d
         </thead>
         <tr>
             <td>
-                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/blob/main/Trilha%20-%20Inteligencia%20Artificial/02_chatbot.py">01 - ChatBot Simples</a>
+                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/01%20-%20Explorando%20a%20API%20da%20OpenAi/02%20-%20ChatBot%20Simples">01 - ChatBot Simples</a>
             </td>
         </tr>
         <tr>
             <td>
-                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/blob/main/Trilha%20-%20Inteligencia%20Artificial/03_funcoes_externas_langchain.py">02 - Usando Funções Externas com a API da OPENAI através de LangChain</a>
+                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/01%20-%20Explorando%20a%20API%20da%20OpenAi/03%20-%20Funções%20Externas%20com%20LangChain">02 - Usando Funções Externas com a API da OPENAI através de LangChain</a>
                 </td>
         </tr>
         <tr>
@@ -77,27 +77,27 @@ Esse repositório foi criado para armazenar os códigos, atividades e desafios d
         </tr>
         <tr>
             <td>
-                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/blob/main/Trilha%20-%20Inteligencia%20Artificial/04_chatbot_financas.py">04 - ChatBot de Finanças utilizando a API yfinance</a>
+                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/01%20-%20Explorando%20a%20API%20da%20OpenAi/04%20-%20ChatBot%20Finanças">04 - ChatBot de Finanças utilizando a API yfinance</a>
                 </td>
         </tr>
         <tr>
             <td>
-                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/05%20-%20Fine%20Tuning">05 - Fine Tuning</a>
+                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/01%20-%20Explorando%20a%20API%20da%20OpenAi/05%20-%20Fine%20Tuning">05 - Fine Tuning</a>
                 </td>
         </tr>
         <tr>
             <td>
-                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/06%20-%20Assistants">06 - Assistants</a>
+                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/01%20-%20Explorando%20a%20API%20da%20OpenAi/06%20-%20Assistants">06 - Assistants</a>
                 </td>
         </tr>
         <tr>
             <td>
-                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/07%20-%20DALL-E%20e%20GPT-Vision">07 - DALL-E e GPT Vision</a>
+                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/01%20-%20Explorando%20a%20API%20da%20OpenAi/07%20-%20DALL-E%20e%20GPT-Vision">07 - DALL-E e GPT Vision</a>
                 </td>
         </tr>
         <tr>
             <td>
-                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/08%20-%20Whisper%20e%20TTS">08 - Whispers e TTS</a>
+                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/01%20-%20Explorando%20a%20API%20da%20OpenAi/08%20-%20Whisper%20e%20TTS">08 - Whispers e TTS</a>
                 </td>
         </tr>
     </table>
