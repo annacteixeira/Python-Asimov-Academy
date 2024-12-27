@@ -1,7 +1,10 @@
 import streamlit as st
 import openai
+import queue
+import time
 from moviepy import VideoFileClip
 from pathlib import Path
+from streamlit_webrtc import WebRtcMode, webrtc_streamer
 
 from dotenv import find_dotenv, load_dotenv
 _= load_dotenv(find_dotenv())
@@ -19,8 +22,6 @@ st.set_page_config(
     layout='wide'
 )
 
-def transcreve_tab_mic():
-    st.markdown('Transcreve microfone')
     
 def transcreve_tab_video():
     prompt_input = st.text_input('(opcional) Insira um prompt para auxiliar a transcrição', key='input_video')
@@ -59,12 +60,9 @@ def transcreve_tab_audio():
 
 def main():
     st.header('Bem-vindo ao Transcript 🎙️', divider=True)
-    st.markdown('#### Transcreva áudio do microfone, de vídeos e de arquivos de áudio!')
-    tab_mic, tab_video, tab_audio = st.tabs(['Microfone', 'Vídeo', 'Áudio'])
+    st.markdown('#### Transcreva áudios de vídeos e de arquivos de áudio!')
+    tab_video, tab_audio = st.tabs(['Vídeo', 'Áudio'])
     
-    with tab_mic:
-        transcreve_tab_mic()
-        
     with tab_video:
         transcreve_tab_video()
     
