@@ -18,3 +18,16 @@ moviepy
 pydub
 sentencepiece
 datasets
+langchain
+langchain-community
+langchain-openai
+huggingface-hub
+jinja2
+tiktoken
+yt_dlp
+beautifulsoup4
+
+# The following libraries require authentication. Uncomment to install
+# google-api-python-client
+# google-auth-http2lib
+# google-auth-oauthlib
