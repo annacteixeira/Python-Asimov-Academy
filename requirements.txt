@@ -13,7 +13,6 @@ path
 streamlit
 streamlit_webrtc
 unidecode
-re
 moviepy
 pydub
 sentencepiece
@@ -29,5 +28,5 @@ beautifulsoup4
 
 # The following libraries require authentication. Uncomment to install
 # google-api-python-client
-# google-auth-http2lib
+# google-auth-httplib2
 # google-auth-oauthlib
