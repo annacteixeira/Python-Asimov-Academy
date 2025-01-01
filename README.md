@@ -128,6 +128,47 @@ Esse repositório foi criado para armazenar os códigos, atividades e desafios d
 
 </div>
 
+<div align="center">
+    <table>
+        <thead>
+            <tr>
+                <th>Hugging Face</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>
+                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/03%20-%20Hugging%20Face/01%20-%20Transformers">01 - Transformers</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/03%20-%20Hugging%20Face/02%20-%20Testando%20e%20Comparando%20Outros%20Modelos">02 - Testando e Comparando Outros Modelos</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/03%20-%20Hugging%20Face/03%20-%20Tokenizacao">03 - Tokenização</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/03%20-%20Hugging%20Face/04%20-%20Modelos%20de%20Conversacao">04 - Modelos de Conversação</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/03%20-%20Hugging%20Face/05%20-%20Inference%20API">05 - Inference API</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/03%20-%20Hugging%20Face/06%20-%20Datasets%20e%20Spaces">06 - Datasets e Spaces</a>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
 ## Licenças
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
