@@ -16,3 +16,4 @@ unidecode
 re
 moviepy
 pydub
+sentencepiece
