@@ -25,7 +25,7 @@ jinja2
 tiktoken
 yt_dlp
 beautifulsoup4
-pysqlite3-binary
+# pysqlite3-binary  # LINUX 
 
 # The following libraries require authentication. Uncomment to install
 # google-api-python-client
