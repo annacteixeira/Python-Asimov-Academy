@@ -25,6 +25,7 @@ jinja2
 tiktoken
 yt_dlp
 beautifulsoup4
+chromadb
 # pysqlite3-binary  # LINUX 
 
 # The following libraries require authentication. Uncomment to install
