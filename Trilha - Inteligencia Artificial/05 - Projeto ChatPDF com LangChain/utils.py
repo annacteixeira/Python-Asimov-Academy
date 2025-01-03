@@ -1,7 +1,8 @@
 import os
 from dotenv import load_dotenv
-from langchain_community.llms import OpenAI
 from pathlib import Path
+
+from langchain_community.llms import OpenAI
 from langchain_community.document_loaders.pdf import PyPDFLoader
 from langchain_community.vectorstores.faiss import FAISS
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -9,12 +10,14 @@ from langchain_openai.embeddings import OpenAIEmbeddings
 from langchain_openai.chat_models import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
 from langchain.chains.conversational_retrieval.base import ConversationalRetrievalChain
+from langchain.prompts import PromptTemplate
+
+from configs import *
 
 import streamlit as st
 
 
 FILES_FOLDER = Path(__file__).parent / 'files'
-MODEL_NAME = 'gpt-3.5-turbo-0125'
 
 def initialize_api_openai():
     load_dotenv()
@@ -61,7 +64,7 @@ def create_conversation_chain():
     docs = document_splitting(docs)
     vector_store = create_vector_store(docs)
     
-    chat = ChatOpenAI(model=MODEL_NAME)
+    chat = ChatOpenAI(model=get_config('model_name'))
     
     memory = ConversationBufferMemory(
         return_messages=True,
@@ -69,13 +72,19 @@ def create_conversation_chain():
         output_key='answer'
     )
     
-    retriever = vector_store.as_retriever()
+    retriever = vector_store.as_retriever(
+        search_type = get_config('retrieval_search_type'),
+        search_kwargs = get_config('retrieval_kwargs')
+    )
+    
+    prompt_template = PromptTemplate.from_template(get_config('prompt'))
     
     chat_chain = ConversationalRetrievalChain.from_llm(
         llm=chat,
         memory=memory,
         return_source_documents=True,
         retriever=retriever,
+        combine_docs_chain_kwargs={'prompt': prompt_template},
         verbose=True
     )
     
