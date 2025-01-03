@@ -1,11 +1,19 @@
-import streamlit as st
 from pathlib import Path
+from langchain.memory import ConversationBufferMemory
+
+import streamlit as st
 import time
 
 FILES_FOLDER = Path(__file__).parent / 'files'
 
 def create_conversation_chain():
     st.session_state['chain'] = True
+    
+    memory = ConversationBufferMemory(return_messages=True)
+    memory.chat_memory.add_user_message('Oi')
+    memory.chat_memory.add_ai_message('Oi, eu sou uma LLM!')
+    st.session_state['memory'] = memory
+    
     time.sleep(1)
 
 def sidebar():
@@ -35,10 +43,44 @@ def sidebar():
             create_conversation_chain()
             st.rerun()
     
+def chat_window():
+    st.header('🤖 Chat com PDFs', divider=True)
+    
+    if not 'chain' in st.session_state:
+        st.error('Faça o upload de PDFs para começar!')
+        st.stop()
+        
+    # chain = st.session_state['chain']
+    # memory = chain.memory
+    
+    memory = st.session_state['memory']
+    messages = memory.load_memory_variables({})['history']
+    
+    container = st.container()
+    for message in messages:
+        chat = container.chat_message(message.type)
+        chat.markdown(message.content)
+    
+    new_message = st.chat_input('Converse com seus documentos...')
+    
+    if new_message:
+        chat = container.chat_message('human')
+        chat.markdown(new_message)
+        
+        chat = container.chat_message('ai')
+        chat.markdown('Gerando resposta...')
+        
+        time.sleep(2)
+        
+        memory.chat_memory.add_user_message(new_message)
+        memory.chat_memory.add_ai_message('Oi, eu sou uma LLM!')
+        st.rerun()
+        
+    
 def main():
     with st.sidebar:
         sidebar()
-    pass
+    chat_window()
 
 if __name__ == '__main__':
     main()
