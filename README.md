@@ -186,6 +186,11 @@ Esse repositório foi criado para armazenar os códigos, atividades e desafios d
                 <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/04%20-%20Aplicacoes%20de%20IA%20com%20LangChain/02%20-%20Chains%20para%20Encadeamento%20de%20Prompts">02 - Chains para Encadeamento de Prompts</a>
             </td>
         </tr>
+        <tr>
+            <td>
+                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/04%20-%20Aplicacoes%20de%20IA%20com%20LangChain/03%20-%20Retrieval%20Augmented%20Generation">03 - Retrieval Augmented Generation</a>
+            </td>
+        </tr>
     </table>
 </div>
 
