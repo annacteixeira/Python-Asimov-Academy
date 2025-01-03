@@ -26,7 +26,9 @@ tiktoken
 yt_dlp
 beautifulsoup4
 chromadb
-# pysqlite3-binary  # LINUX 
+faiss-cpu
+# pysqlite3-binary  # LINUX or MAC
+
 
 # The following libraries require authentication. Uncomment to install
 # google-api-python-client
