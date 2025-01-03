@@ -27,6 +27,7 @@ yt_dlp
 beautifulsoup4
 chromadb
 faiss-cpu
+lark
 # pysqlite3-binary  # LINUX or MAC
 
 
