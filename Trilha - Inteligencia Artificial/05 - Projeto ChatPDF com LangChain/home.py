@@ -1,20 +1,10 @@
-from pathlib import Path
-from langchain.memory import ConversationBufferMemory
-
+from dotenv import load_dotenv
 import streamlit as st
 import time
 
-FILES_FOLDER = Path(__file__).parent / 'files'
+from utils import initialize_api_openai, create_conversation_chain, FILES_FOLDER
 
-def create_conversation_chain():
-    st.session_state['chain'] = True
-    
-    memory = ConversationBufferMemory(return_messages=True)
-    memory.chat_memory.add_user_message('Oi')
-    memory.chat_memory.add_ai_message('Oi, eu sou uma LLM!')
-    st.session_state['memory'] = memory
-    
-    time.sleep(1)
+load_dotenv()
 
 def sidebar():
     uploaded_pdfs= st.file_uploader(
@@ -50,11 +40,10 @@ def chat_window():
         st.error('Faça o upload de PDFs para começar!')
         st.stop()
         
-    # chain = st.session_state['chain']
-    # memory = chain.memory
+    chain = st.session_state['chain']
+    memory = chain.memory
     
-    memory = st.session_state['memory']
-    messages = memory.load_memory_variables({})['history']
+    messages = memory.load_memory_variables({})['chat_history']
     
     container = st.container()
     for message in messages:
@@ -70,10 +59,9 @@ def chat_window():
         chat = container.chat_message('ai')
         chat.markdown('Gerando resposta...')
         
+        chain.invoke({'question': new_message})
         time.sleep(2)
         
-        memory.chat_memory.add_user_message(new_message)
-        memory.chat_memory.add_ai_message('Oi, eu sou uma LLM!')
         st.rerun()
         
     
@@ -81,6 +69,7 @@ def main():
     with st.sidebar:
         sidebar()
     chat_window()
+    initialize_api_openai()
 
 if __name__ == '__main__':
     main()
