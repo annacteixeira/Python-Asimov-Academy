@@ -3,3 +3,4 @@ librosa
 soundfile
 sounddevice
 opencv-python
+timm
