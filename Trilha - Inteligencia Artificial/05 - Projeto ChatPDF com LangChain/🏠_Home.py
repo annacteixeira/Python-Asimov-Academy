@@ -6,6 +6,11 @@ from utils import initialize_api_openai, create_conversation_chain, FILES_FOLDER
 
 load_dotenv()
 
+st.set_page_config(
+    page_title='Home',
+    page_icon=':house:',
+)
+
 def sidebar():
     uploaded_pdfs= st.file_uploader(
         'Adicione seus arquivos PDF', 
@@ -59,7 +64,8 @@ def chat_window():
         chat = container.chat_message('ai')
         chat.markdown('Gerando resposta...')
         
-        chain.invoke({'question': new_message})
+        answer = chain.invoke({'question': new_message})
+        st.session_state['last_answer'] = answer
         time.sleep(2)
         
         st.rerun()
