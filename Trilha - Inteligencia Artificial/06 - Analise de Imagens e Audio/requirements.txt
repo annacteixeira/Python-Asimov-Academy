@@ -2,3 +2,4 @@ datasets
 librosa
 soundfile
 sounddevice
+opencv-python
