@@ -4,3 +4,5 @@ soundfile
 sounddevice
 opencv-python
 timm
+decord
+av
