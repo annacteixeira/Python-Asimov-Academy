@@ -195,6 +195,22 @@ Esse repositório foi criado para armazenar os códigos, atividades e desafios d
 </div>
 
 <div align="center">
+<table>
+  <h3>Projeto ChatPDF com LangChain</h3>  
+  <thead>
+    <tr>
+      <th>Repositório</th>
+      <th>GIF do Projeto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/05%20-%20Projeto%20ChatPDF%20com%20LangChain" target="_blank">Projeto - ChatPDF – Analisando PDFs com IA e LangChain</a></td>
+      <td><img src="https://github.com/annacteixeira/Python-Asimov-Academy/blob/main/Gifs%20-%20Projetos/Projeto%20ChatPDF%20com%20LangChain.gif" alt="GIF do Projeto"></td>
+    </tr>
+</div>
+
+<div align="center">
     <table>
         <thead>
             <tr>
