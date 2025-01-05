@@ -1,0 +1,16 @@
+ipykernel
+langchain==0.1.20
+langchain-community==0.0.38
+langchain-openai==0.1.6
+langchain-experimental==0.0.58
+langchainhub==0.1.15
+pypdf
+faiss-cpu
+python-dotenv
+pydantic
+beautifulsoup4
+wikipedia
+arxiv
+stackapi
+pandas
+tabulate
