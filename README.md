@@ -194,6 +194,32 @@ Esse repositório foi criado para armazenar os códigos, atividades e desafios d
     </table>
 </div>
 
+<div align="center">
+    <table>
+        <thead>
+            <tr>
+                <th>Análise de Imagens e Áudio</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>
+                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/blob/main/Trilha%20-%20Inteligencia%20Artificial/06%20-%20Analise%20de%20Imagens%20e%20Audio/01_IAs_para_audio.ipynb">01 - Análise de Áudios</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/blob/main/Trilha%20-%20Inteligencia%20Artificial/06%20-%20Analise%20de%20Imagens%20e%20Audio/02_IAs_para_imagens.ipynb">02 - Análise de Imagens</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://github.com/annacteixeira/Python-Asimov-Academy/blob/main/Trilha%20-%20Inteligencia%20Artificial/06%20-%20Analise%20de%20Imagens%20e%20Audio/03_IAs_para_video.ipynb">03 - Análise de Vídeos</a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
 ## Licenças
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
