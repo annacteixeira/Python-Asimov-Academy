@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 option = st.selectbox(
-    'Choose a job position:',
+    'Escolha uma vaga:',
     [job.get('name') for job in database.jobs.all()],
     index=None
 )
@@ -40,12 +40,12 @@ if option:
     
     df.rename(
         columns={
-            'name':'Name',
-            'education':'Education',
-            'skills':'Skills',
-            'language':'Language',
+            'name':'Nome',
+            'education':'Educação',
+            'skills':'Habilidades',
+            'language':'Línguas',
             'score':'Score',
-            'summary_id':'Summary ID',
+            'summary_id':'Currículo ID',
             'id':'ID'
         },
         inplace=True
@@ -60,7 +60,7 @@ if option:
         
     grid_options = gb.build()
     
-    st.subheader("Candidate's Rating")
+    st.subheader("Pontuação dos Candidatos")
     st.bar_chart(df, x='Name', y='Score', color='Name')
     
     response = AgGrid(
@@ -83,7 +83,7 @@ if option:
                 os.remove(path)
     
     
-    if st.button('Clear Analysis'):
+    if st.button('Apagar análise'):
         database.delete_all_summaries_by_job_id(job.get('id'))
         database.delete_all_analysis_by_job_id(job.get('id'))
         database.delete_all_files_by_job_id(job.get('id'))
@@ -100,7 +100,7 @@ if option:
                         pdf_data = file.read()
                         
                         st.download_button(
-                            label=f'Download Resume {row[1]["Name"]}',
+                            label=f'Download do currículo {row[1]["Name"]}',
                             data=pdf_data,
                             file_name=f'{row[1]["Name"]}.pdf',
                             mime='application/pdf'
