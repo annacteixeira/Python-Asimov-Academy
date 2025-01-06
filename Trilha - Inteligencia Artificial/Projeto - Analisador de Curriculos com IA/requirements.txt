@@ -9,3 +9,5 @@ pandas
 streamlit-aggrid
 langchain-groq
 python-dotenv
+pymupdf 
+fitz
