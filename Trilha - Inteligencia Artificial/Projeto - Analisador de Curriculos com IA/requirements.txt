@@ -7,3 +7,5 @@ pydantic
 streamlit
 pandas
 streamlit-aggrid
+langchain-groq
+python-dotenv
