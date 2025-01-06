@@ -1,7 +1,10 @@
+import os
 from tinydb import TinyDB, Query
 
 class AnalyzeDatabase(TinyDB):
-    def __init__(self, db_path='Trilha - Inteligencia Artificial/Projeto - Analisador de Curriculos com IA/db.json'):
+    def __init__(self, db_path='db.json'):
+        current_dir = os.path.dirname(__file__)
+        db_path = os.path.join(current_dir, db_path)
         super().__init__(db_path)
         
         self.jobs = self.table('jobs')

@@ -4,3 +4,6 @@ google-auth-httplib2
 google-auth-oauthlib
 tinydb
 pydantic
+streamlit
+pandas
+streamlit-aggrid
