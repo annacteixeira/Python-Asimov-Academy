@@ -14,7 +14,9 @@ dependencies = [
     "tinydb (>=4.8.2,<5.0.0)",
     "streamlit-aggrid (>=1.0.5,<2.0.0)",
     "pandas (>=2.2.3,<3.0.0)",
-    "streamlit (>=1.41.1,<2.0.0)"
+    "streamlit (>=1.41.1,<2.0.0)",
+    "langchain-groq (>=0.2.2,<0.3.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)"
 ]
 
 
