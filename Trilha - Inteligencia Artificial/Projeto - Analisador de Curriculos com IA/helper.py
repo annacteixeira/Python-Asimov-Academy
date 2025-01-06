@@ -10,17 +10,18 @@ def read_pdf(file_path):
             
     return text
 
-def extract_data_analysis(resum_cv, job_id, resum_id, score) -> Analysis:
+def extract_data_analysis(resum_cv, job_id, summary_id, score) -> Analysis:
     sections_dict = {
         "id": str(uuid.uuid4()),
         "job_id": job_id,
-        "resum_id": resum_id,
+        "summary_id": summary_id,
         "name": "",
         "skills": [],
         "education": [],
-        "languages": [],
+        "languages": [], 
         "score": score
     }
+
 
     patterns = {
         "name": r"(?:## Nome Completo\s*|Nome Completo\s*\|\s*Valor\s*\|\s*\S*\s*\|\s*)(.*)",
@@ -33,13 +34,13 @@ def extract_data_analysis(resum_cv, job_id, resum_id, score) -> Analysis:
     def clean_string(string: str) -> str:
         return re.sub(r"[\*\-]+", "", string).strip()
 
-    for secao, pattern in patterns.items():
+    for section, pattern in patterns.items():
         match = re.search(pattern, resum_cv)
         if match:
-            if secao == "name":
-                sections_dict[secao] = clean_string(match.group(1))
+            if section == "name":
+                sections_dict[section] = clean_string(match.group(1))
             else:
-                sections_dict[secao] = [clean_string(item) for item in match.group(1).split('\n') if item.strip()]
+                sections_dict[section] = [clean_string(item) for item in match.group(1).split('\n') if item.strip()]
 
     # Validação para garantir que nenhuma seção obrigatória esteja vazia
     for key in ["name", "education", "skills"]:

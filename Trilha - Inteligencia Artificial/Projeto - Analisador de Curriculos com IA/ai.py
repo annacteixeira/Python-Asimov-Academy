@@ -1,14 +1,13 @@
-from langchain_groq import ChatGroq
-from dotenv import load_dotenv
-
 import re
+from dotenv import load_dotenv
+from langchain_groq import ChatGroq
 
 load_dotenv()
 
 class GroqClient:
-    def __init__(self, model_id='llama-3.3-70b-versatile') -> None:
+    def __init__(self, model_id='llama-3.3-70b-versatile'):
         self.model_id = model_id
-        self.client = ChatGroq(self.model_id)
+        self.client = ChatGroq(model=model_id)
         
     def generate_response(self, prompt):
         response = self.client.invoke(prompt)
@@ -99,10 +98,16 @@ class GroqClient:
             score_str = match.group(1)
             if '/' in score_str:
                 score_str = score_str.split('/')[0]
-                                
-            return float(score_str.replace(',', '.'))
-        
+            
+            # Verifique se score_str não é apenas um ponto
+            if score_str and score_str != '.':
+                try:
+                    return float(score_str.replace(',', '.'))
+                except ValueError:
+                    return None
+            
         return None
+
     
     def generate_opinion(self, cv, job):
         prompt = f'''
