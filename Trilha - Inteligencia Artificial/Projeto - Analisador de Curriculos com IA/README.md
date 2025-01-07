@@ -84,7 +84,7 @@ COLOCAR GIF DE EXECUÇÃO DO PROJETO
 Certifique-se de ter:
 
 Python 3.8 ou superior instalado.<br/>
-Poetry ou gerenciador de pacotes para instalar as dependências.<br/>
+Pip, Poetry ou gerenciador de pacotes para instalar as dependências.<br/>
 Framework Streamlit instalado.<br/>
 
 ### 2. Instalar Dependências
