@@ -97,9 +97,7 @@ pip install -r requirements.txt
 2. Execute o script ```authenticate.py``` para gerar um token.json 
 
 3. Crie uma pasta no Google Drive e faça o upload dos currículos desejados. Ao criar a pasta, a URL irá possuir um ID 
-'https://drive.google.com/drive/u/0/folders/aqui-fica-o-ID'
-
-Copie o ID e adicione ao arquivo download_cv.py, na variável ```folder_id```
+'https://drive.google.com/drive/u/0/folders/aqui-fica-o-ID'. Copie o ID e adicione ao arquivo download_cv.py, na variável ```folder_id```
 
 4. Crie a vaga desejada no arquivo ```create_job.py```
 
