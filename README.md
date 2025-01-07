@@ -235,6 +235,22 @@ Esse repositório foi criado para armazenar os códigos, atividades e desafios d
     </table>
 </div>
 
+<table>
+  <h3>Projeto Analisador de Currículos com IA</h2>  
+  <thead>
+    <tr>
+      <th>Repositório</th>
+      <th>GIF do Projeto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/annacteixeira/Python-Asimov-Academy/tree/main/Trilha%20-%20Inteligencia%20Artificial/Projeto%20-%20Analisador%20de%20Curriculos%20com%20IA">Projeto - Analisador de Curriculos com IA</a></td>
+      <td><img src="https://github.com/annacteixeira/Python-Asimov-Academy/blob/main/Gifs%20-%20Projetos/Projeto%20Spotify.gif" alt="GIF do Projeto"></td>
+    </tr>
+  </tbody>
+</table>
+
 
 ## Licenças
 
