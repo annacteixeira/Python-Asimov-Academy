@@ -75,8 +75,7 @@ A interface é intuitiva e funcional, permitindo:
 
 ## Exemplo de Interface
 
-COLOCAR GIF DE EXECUÇÃO DO PROJETO
-
+<img src="https://github.com/annacteixeira/Python-Asimov-Academy/blob/main/Gifs%20-%20Projetos/Projeto%20AI%20Resume%20Analyzer.gif" alt="GIF do Projeto">
 
 ## 🚀 Como Executar o Projeto
 
