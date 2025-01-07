@@ -235,6 +235,7 @@ Esse repositório foi criado para armazenar os códigos, atividades e desafios d
     </table>
 </div>
 
+<div align="center">
 <table>
   <h3>Projeto Analisador de Currículos com IA</h2>  
   <thead>
@@ -250,6 +251,7 @@ Esse repositório foi criado para armazenar os códigos, atividades e desafios d
     </tr>
   </tbody>
 </table>
+</div>
 
 
 ## Licenças
