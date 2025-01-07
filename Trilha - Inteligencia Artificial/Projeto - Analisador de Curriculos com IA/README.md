@@ -75,6 +75,8 @@ A interface é intuitiva e funcional, permitindo:
 
 ## Exemplo de Interface
 
+COLOCAR GIF DE EXECUÇÃO DO PROJETO
+
 
 ## 🚀 Como Executar o Projeto
 
