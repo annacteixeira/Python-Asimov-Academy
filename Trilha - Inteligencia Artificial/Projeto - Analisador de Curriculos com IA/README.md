@@ -98,18 +98,20 @@ pip install -r requirements.txt
 
 3. Crie sua API da GROQ através do site: https://console.groq.com/
 
-3. Crie uma pasta no Google Drive e faça o upload dos currículos desejados. Ao criar a pasta, a URL irá possuir um ID 
+5. Crie um arquivo .env na raiz do projeto e, nele, crie a variável GROQ_API_KEY='sua_api_key_aqui' para autenticação na API Groq
+
+6. Crie uma pasta no Google Drive e faça o upload dos currículos desejados. Ao criar a pasta, a URL irá possuir um ID 
 'https://drive.google.com/drive/u/0/folders/aqui-fica-o-ID'. Copie o ID e adicione ao arquivo download_cv.py, na variável ```folder_id```
 
-4. Crie a vaga desejada no arquivo ```create_job.py```
+7. Crie a vaga desejada no arquivo ```create_job.py```
 
-5. Crie uma pasta 'resumes' na raiz do projeto
+8. Crie uma pasta 'resumes' na raiz do projeto
 
-6. Execute o script ```download_cv.py``` para fazer o download dos currículos da pasta do Google Drive
+9. Execute o script ```download_cv.py``` para fazer o download dos currículos da pasta do Google Drive
 
-7. Execute o script ```analise.py``` para que o modelo de IA possa gerar as análises dos currículos e adicioná-las ao banco de dados ```db.json```
+10. Execute o script ```analise.py``` para que o modelo de IA possa gerar as análises dos currículos e adicioná-las ao banco de dados ```db.json```
 
-8. Inicie o servidor Streamlit com o comando:
+11. Inicie o servidor Streamlit com o comando:
 
 ```bash
 streamlit run app.py
