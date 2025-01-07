@@ -90,6 +90,18 @@ pip install -r requirements.txt
 
 
 ### 3. Executar a Aplicação
+
+1. Crie sua API do Google Drive -> Tutorial: https://www.youtube.com/watch?v=2NuI-6kDq_A
+
+2. Execute o script ```authenticate.py``` para gerar um token.json 
+
+3. Crie uma pasta no Google Drive e faça o upload dos currículos desejados. Ao criar a pasta, a URL irá possuir um ID 
+'https://drive.google.com/drive/u/0/folders/aqui-fica-o-ID'
+<br/>
+Copie o ID e adicione ao arquivo download_cv.py, na variável ```folder_id```
+
+4. Crie a vaga desejada no arquivo ```create_job.py```
+
 Inicie o servidor Streamlit com o comando:
 
 ```bash
@@ -130,6 +142,7 @@ As dependências podem ser instaladas com o comando `pip install -r requirements
 
 - Adicionar um sistema de upload de currículos diretamente pela interface.
 - Exportação dos resultados em formatos como Excel ou CSV.
+- Adicionar uma seção para que o usuário possa criar uma vaga pela interface.
 - Melhorias visuais na interface, como temas personalizados.
 
 
@@ -138,6 +151,6 @@ Sinta-se à vontade para contribuir com o projeto! Clone o repositório, crie um
 
 
 ## 📄 Licença
-Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
+Este projeto está sob a licença MIT. 
 
 Se precisar de ajuda ou estiver com dúvidas, fique à vontade para abrir uma issue no repositório ou entrar em contato!
