@@ -77,6 +77,7 @@ A interface é intuitiva e funcional, permitindo:
 
 
 ## 🚀 Como Executar o Projeto
+
 ### 1. Pré-requisitos
 Certifique-se de ter:
 
@@ -97,12 +98,18 @@ pip install -r requirements.txt
 
 3. Crie uma pasta no Google Drive e faça o upload dos currículos desejados. Ao criar a pasta, a URL irá possuir um ID 
 'https://drive.google.com/drive/u/0/folders/aqui-fica-o-ID'
-<br/>
+
 Copie o ID e adicione ao arquivo download_cv.py, na variável ```folder_id```
 
 4. Crie a vaga desejada no arquivo ```create_job.py```
 
-Inicie o servidor Streamlit com o comando:
+5. Crie uma pasta 'resumes' na raiz do projeto
+
+6. Execute o script ```download_cv.py``` para fazer o download dos currículos da pasta do Google Drive
+
+7. Execute o script ```analise.py``` para que o modelo de IA possa gerar as análises dos currículos e adicioná-las ao banco de dados ```db.json```
+
+8. Inicie o servidor Streamlit com o comando:
 
 ```bash
 streamlit run app.py
