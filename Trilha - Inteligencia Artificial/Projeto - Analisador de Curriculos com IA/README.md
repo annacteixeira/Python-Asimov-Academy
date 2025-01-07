@@ -80,9 +80,9 @@ A interface é intuitiva e funcional, permitindo:
 ### 1. Pré-requisitos
 Certifique-se de ter:
 
-Python 3.8 ou superior instalado.
-Poetry ou gerenciador de pacotes para instalar as dependências.
-Framework Streamlit instalado.
+Python 3.8 ou superior instalado.<br/>
+Poetry ou gerenciador de pacotes para instalar as dependências.<br/>
+Framework Streamlit instalado.<br/>
 
 ### 2. Instalar Dependências
 No diretório do projeto, execute o seguinte comando para instalar as dependências:
