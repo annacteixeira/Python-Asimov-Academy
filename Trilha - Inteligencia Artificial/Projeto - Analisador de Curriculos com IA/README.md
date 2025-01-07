@@ -37,30 +37,30 @@ Checkbox para selecionar um ou mais candidatos.
 
 
 ## 📂 Estrutura do Projeto
-Projeto - Analisador de Curriculos com IA/
+Projeto - Analisador de Curriculos com IA/ <br/>
 
-├── models/
-│   ├── analysis.py        # Estrutura para representar as análises no código
-|   ├── file.py            # Modelo Pydantic que representa o relacionamento entre arquivos e vagas.
-|   ├── job.py             # Modelo Pydantic que representa as informações de uma vaga de emprego
-|   ├── summary.py         # Modelo Pydantic que representa o resumo do currículo, com detalhes como opinião e arquivo associado.
-├── resumes/               # Pasta com os currículos em PDF extraídos do Google Drive
-│   ├── exemplo1.pdf
-│   ├── exemplo2.pdf
-├── .env                   # Configuração de variáveis de ambiente. Incluir a variável GROQ_API_KEY para autenticação na API Groq.
-├── ai.py                  # Gerencia interações com o modelo Groq para análise de currículos, geração de resumo, pontuação e opinião
-├── analise.py             # Processa os currículos, gera resumos, opiniões e pontuações, e insere os resultados no banco de dados.
-├── app.py                 # Script principal para executar o Streamlit
-├── authenticate.py        # Gerencia autenticação com a API do Google Drive usando OAuth, salvando e renovando credenciais.
-├── database.py            # Simulação de banco de dados local
-├── db.json                # Arquivo JSON que simula o banco de dados
-├── download_cv.py         # Conecta-se à API do Google Drive para baixar arquivos de uma pasta específica usando a credencial token.json.
-├── helper.py              # Funções auxiliares (leitura de PDFs e extração de dados)
-├── poetry.lock            # Arquivo gerado automaticamente pelo Poetry para travar versões exatas das dependências do projeto
-├── pyproject.toml         # Arquivo de configuração do Poetry que define as dependências e metadados do projeto
-|── README.md              # Documentação do projeto
-|── requirements.txt       # Lista as dependências do projeto necessárias para instalação e execução no ambiente Python.
-└── token.json             # Arquivo gerado automaticamente após a autenticação na API do Google.
+├── models/ <br/>
+│   ├── analysis.py        # Estrutura para representar as análises no código <br/>
+|   ├── file.py            # Modelo Pydantic que representa o relacionamento entre arquivos e vagas. <br/>
+|   ├── job.py             # Modelo Pydantic que representa as informações de uma vaga de emprego <br/>
+|   ├── summary.py         # Modelo Pydantic que representa o resumo do currículo, com detalhes como opinião e arquivo associado. <br/>
+├── resumes/               # Pasta com os currículos em PDF extraídos do Google Drive <br/>
+│   ├── exemplo1.pdf <br/>
+│   ├── exemplo2.pdf <br/>
+├── .env                   # Configuração de variáveis de ambiente. Incluir a variável GROQ_API_KEY para autenticação na API Groq. <br/>
+├── ai.py                  # Gerencia interações com o modelo Groq para análise de currículos, geração de resumo, pontuação e opinião <br/>
+├── analise.py             # Processa os currículos, gera resumos, opiniões e pontuações, e insere os resultados no banco de dados. <br/>
+├── app.py                 # Script principal para executar o Streamlit <br/>
+├── authenticate.py        # Gerencia autenticação com a API do Google Drive usando OAuth, salvando e renovando credenciais. <br/>
+├── database.py            # Simulação de banco de dados local <br/>
+├── db.json                # Arquivo JSON que simula o banco de dados <br/>
+├── download_cv.py         # Conecta-se à API do Google Drive para baixar arquivos de uma pasta específica usando a credencial token.json. <br/>
+├── helper.py              # Funções auxiliares (leitura de PDFs e extração de dados) <br/>
+├── poetry.lock            # Arquivo gerado automaticamente pelo Poetry para travar versões exatas das dependências do projeto <br/>
+├── pyproject.toml         # Arquivo de configuração do Poetry que define as dependências e metadados do projeto <br/>
+|── README.md              # Documentação do projeto <br/>
+|── requirements.txt       # Lista as dependências do projeto necessárias para instalação e execução no ambiente Python. <br/>
+└── token.json             # Arquivo gerado automaticamente após a autenticação na API do Google. <br/>
 
 
 ## 📊 Interface do Usuário
