@@ -3,16 +3,14 @@ from repositories.user import UserRepository
 from repositories.weight_history import WeightHistoryRepository
 
 class WeightUpdateTool(BaseTool):
+    _user_repo = UserRepository
+    _weight_history_repo = WeightHistoryRepository
     name: str = 'weight_update'
     description: str = (
         "Use esta ferramenta para registrar o peso de um usuário. "
         "Entrada: telegram_id do usuário e weight_kg."
     )
     
-    def __init__(self):
-        super().__init__()
-        self._user_repo = UserRepository()
-        self._weight_history_repo = WeightHistoryRepository()
         
     def _run(self, telegram_id: int, weight_kg: str) -> str:
         try:

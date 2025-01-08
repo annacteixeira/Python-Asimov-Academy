@@ -2,15 +2,13 @@ from langchain.tools import BaseTool
 from repositories.user import UserRepository
 
 class UserInfoTool(BaseTool):
+    _user_repo = UserRepository
     name: str = 'user_info'
     description: str = (
         "Use esta ferramenta para buscar informações de um usuário existente. "
         "Ela requer o telegram_id do usuário como entrada para recuperar os dados."
     )
     
-    def __init__(self):
-        super().__init__()
-        self._user_repo = UserRepository()
         
     def _run(self, telegram_id: int) -> str:
         try:

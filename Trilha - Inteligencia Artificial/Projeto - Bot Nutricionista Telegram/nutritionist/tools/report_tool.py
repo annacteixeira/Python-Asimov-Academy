@@ -8,18 +8,15 @@ from repositories.report import ReportRepository
 from repositories.weight_history import WeightHistoryRepository
 
 class ReportTool(BaseTool):
+    _user_repo = UserRepository()
+    _meal_entry_repo = MealEntryReppository
+    _weight_history_repo = WeightHistoryRepository()
+    _report_repo = ReportRepository()
     name: str = 'report_tool'
     description: str = (
         "Use esta ferramenta para gerar um relatório para um usuário. "
         "Entrada: data para a qual o relatório é solicitado no formato ISO para ser usada na função datetime.fromisoformat."
     )
-    
-    def __init__(self):
-        super().__init__()
-        self._user_repo = UserRepository()
-        self._meal_entry_repo = MealEntryReppository()
-        self._weight_history_repo = WeightHistoryRepository()
-        self._report_repo = ReportRepository()
         
     def _run(self, telegram_id: int, report_date: str) -> str:
         try:

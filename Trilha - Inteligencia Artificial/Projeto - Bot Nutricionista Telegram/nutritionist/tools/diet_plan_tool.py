@@ -4,17 +4,14 @@ from repositories.diet_plan import DietPlanRepository
 from repositories.user import UserRepository
 
 class DietPlanTool(BaseTool):
+    _user_repo = UserRepository
+    _diet_plan_repo = DietPlanRepository
     name: str = 'diet_plan'
     description: str = (
         "Use esta ferramenta para criar um plano de dieta de um usuário. "
         "Entrada: telegram_id do usuário e, e plan_details para criar um novo plano ou buscar um plano já existente."
         "A regra para essa Tool é quando o usuario gostar do plano montado por você ai você está autorizado a usar essa tool para salvar o plano"
     )
-    
-    def __init__(self, ):
-        super().__init__()
-        self._user_repo = UserRepository()
-        self._diet_plan_repo = DietPlanRepository()
         
     def _run(self, telegram_id: int, plan_details: str = None) -> str:
         try:

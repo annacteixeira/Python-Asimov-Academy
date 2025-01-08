@@ -4,6 +4,8 @@ from repositories.meal_entry import MealEntryReppository
 from repositories.user import UserRepository
 
 class MealEntryTool(BaseTool):
+    _user_repo = UserRepository
+    _meal_entry_repo = MealEntryReppository
     name: str = "meal_entry_tool"
     description: str = (
         "Ferramenta para toda vez que o usuário quiser que você registre uma refeição que ele fez no dia. "
@@ -12,12 +14,7 @@ class MealEntryTool(BaseTool):
         "Entrada: como meal_description, calories, carbs, proteins, fats."
         "Você deve se basear nas informações que o usuário passou para gerar as informações de calories, carbs, proteins, fats"
     )
-    
-    def __init__(self):
-        super().__init__()
-        self._user_repo = UserRepository()
-        self._meal_entry_repo = MealEntryReppository()
-        
+
     def _run(
         self,
         telegram_id: int,

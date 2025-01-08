@@ -5,6 +5,7 @@ from repositories.user import UserRepository
 from models import User
 
 class UserRegistrationTool(BaseTool):
+    _user_repo: UserRepository
     name: str = 'user_registration'
     
     description: str = (
@@ -16,10 +17,6 @@ class UserRegistrationTool(BaseTool):
     )
     
     args_schema: Type[BaseModel] = User
-    
-    def __init__(self):
-        super().__init__()
-        self._user_repo = UserRepository()
         
     def _run(self,
         telegram_id: int,
