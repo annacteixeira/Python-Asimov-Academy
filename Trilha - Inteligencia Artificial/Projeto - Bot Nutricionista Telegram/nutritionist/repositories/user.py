@@ -1,7 +1,7 @@
 from typing import Optional, List
 from tinydb import Query
-from nutritionist.models import User
-from nutritionist.repositories.base_repository import BaseRepository
+from models import User
+from repositories.base_repository import BaseRepository
 
 class UserRepository(BaseRepository):
     def __init__(self):
@@ -42,7 +42,7 @@ class UserRepository(BaseRepository):
     
     def update_user(
         self,
-        user_id: int,
+        telegram_id: int,
         name: str,
         gender: str,
         age: str,
@@ -62,7 +62,7 @@ class UserRepository(BaseRepository):
         }
         
         UserQuery = Query()
-        self.user_table.update(update_data, UserQuery.id == user_id)
+        self.user_table.update(update_data, UserQuery.id == telegram_id)
         
     def delete_user(self, user_id: int) -> None:
         UserQuery = Query()
