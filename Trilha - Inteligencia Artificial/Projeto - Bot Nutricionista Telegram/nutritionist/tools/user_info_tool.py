@@ -1,5 +1,5 @@
 from langchain.tools import BaseTool
-from nutritionist.repositories.user import UserRepository
+from repositories.user import UserRepository
 
 class UserInfoTool(BaseTool):
     name: str = 'user_info'
