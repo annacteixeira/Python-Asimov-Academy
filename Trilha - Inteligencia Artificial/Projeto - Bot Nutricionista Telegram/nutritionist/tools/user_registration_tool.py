@@ -1,8 +1,8 @@
 from typing import Any, Dict, Type
 from pydantic import BaseModel
 from langchain.tools import BaseTool
-from nutritionist.repositories.user import UserRepository
-from nutritionist.models import User
+from repositories.user import UserRepository
+from models import User
 
 class UserRegistrationTool(BaseTool):
     name: str = 'user_registration'
@@ -10,7 +10,7 @@ class UserRegistrationTool(BaseTool):
     description: str = (
     "Use esta ferramenta para registrar um novo usuário ou atualizar as informações de um usuário existente. "
     "Esta ferramenta requer os seguintes dados do usuário: "
-    "name (nome), gender (gênero), age (idade como uma string), height_cm (altura em centímetros como uma string), weight_kg (peso em quilogramas como uma string), "
+    "telegram_id, name (nome), gender (gênero), age (idade como uma string), height_cm (altura em centímetros como uma string), weight_kg (peso em quilogramas como uma string), "
     "has_diabetes (se tem diabetes: sim/não) e goal (objetivo: perder peso, ganhar peso, ganhar massa muscular). "
     "Se algum dado estiver faltando, você deve primeiro coletar essas informações do usuário antes de usar esta ferramenta."
     )
@@ -49,10 +49,10 @@ class UserRegistrationTool(BaseTool):
             user = self._user_repo.get_user_by_telegram_id(telegram_id)
             if user:
                 updated_user = self._user_repo.update_user(**user_data)
-                return f'Informações atualizadas com sucesso para {updated_user.name}.'
+                return f'Informações atualizadas com sucesso.'
             
             new_user = self._user_repo.create_user(**user_data)
-            return f'Usuário {new_user.name} registrado com sucesso.'
+            return f'Usuário registrado com sucesso.'
         
         except Exception as err:
             return f'Erro ao registrar o usuário: {str(err)}'
