@@ -1,7 +1,7 @@
 from langchain.tools import BaseTool
 from typing import Optional
-from nutritionist.repositories.diet_plan import DietPlanRepository
-from nutritionist.repositories.user import UserRepository
+from repositories.diet_plan import DietPlanRepository
+from repositories.user import UserRepository
 
 class DietPlanTool(BaseTool):
     name: str = 'diet_plan'
