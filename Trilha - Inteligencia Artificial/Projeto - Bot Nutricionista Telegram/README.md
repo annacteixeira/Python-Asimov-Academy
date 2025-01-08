@@ -136,7 +136,7 @@ graph TD
 3. **Execute o script:**
 
    ```bash
-   ./bin/build.sh
+   python nutritionist/app.py
    ```
 
    > 📁 As imagens enviadas pelos usuários via telegram serão armazenadas na pasta `storage`.
