@@ -1,15 +1,15 @@
 import os
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
-from nutritionist.chat.memory import SqliteMemory
+from chat.memory import SqliteMemory
 from langchain.agents import initialize_agent, AgentType
-from nutritionist.tools.food_analyzer_tool import FoodImageAnalyzerTool
-from nutritionist.tools.user_registration_tool import UserRegistrationTool
-from nutritionist.tools.user_info_tool import UserInfoTool
-from nutritionist.tools.diet_plan_tool import DietPlanTool
-from nutritionist.tools.weight_update_tool import WeightUpdateTool
-from nutritionist.tools.meal_entry_tool import MealEntryTool
-from nutritionist.tools.report_tool import ReportTool
+from tools.food_analyzer_tool import FoodImageAnalyzerTool
+from tools.user_registration_tool import UserRegistrationTool
+from tools.user_info_tool import UserInfoTool
+from tools.diet_plan_tool import DietPlanTool
+from tools.weight_update_tool import WeightUpdateTool
+from tools.meal_entry_tool import MealEntryTool
+from tools.report_tool import ReportTool
 
 load_dotenv()
 
@@ -35,7 +35,7 @@ class NutritionistAgent:
             openai_api_key=os.getenv('OPENAI_API_KEY')
         )
 
-        self.memory = SqliteMemory(session_id).history
+        self.memory = SqliteMemory(session_id=session_id).history
         
         self.tools = [
             FoodImageAnalyzerTool(),
@@ -56,10 +56,12 @@ class NutritionistAgent:
             agent_kwargs={'system_message':SYSTEM_PROMPT}
         )
         
-        def run(self, input_text: str) -> str:
-            try:
-                response = self.agent.invoke(input_text)
-                return response.get('output')
-            except Exception as err:
-                print(err)
-                return 'Desculpe, não consegui processar a sua solicitação. Tente novamente!'
+
+    def run(self, input_text: str) -> str:
+        try:
+            response = self.agent.invoke(input_text)
+            print(f"Agent response: {response}")
+            return response.get('output')
+        except Exception as e:
+            print(f"Error: {e}")
+            return "Desculpe, não consegui processar sua solicitação."
