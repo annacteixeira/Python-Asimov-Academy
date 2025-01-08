@@ -1,0 +1,27 @@
+[project]
+name = "projeto-bot-nutricionista-telegram"
+version = "0.1.0"
+description = "Esse projeto visa criar um bot do Telegram capaz de interagir com os usuários de forma natural e personalizada, oferecendo orientações nutricionais e suporte em saúde e bem-estar"
+authors = [
+    {name = "Anna Chandra",email = "annaftteixeira@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<4.0"
+dependencies = [
+    "tinydb (>=4.8.2,<5.0.0)",
+    "pydantic (>=2.10.4,<3.0.0)",
+    "langchain-community (>=0.3.14,<0.4.0)",
+    "langchainhub (>=0.1.21,<0.2.0)",
+    "langgraph (>=0.2.61,<0.3.0)",
+    "langchain-openai (>=0.2.14,<0.3.0)",
+    "langchain (>=0.3.14,<0.4.0)",
+    "langchain-core (>=0.3.29,<0.4.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)",
+    "pillow (>=11.1.0,<12.0.0)",
+    "pyrogram (>=2.0.106,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
