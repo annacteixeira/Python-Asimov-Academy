@@ -3,6 +3,13 @@ from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 from nutritionist.chat.memory import SqliteMemory
 from langchain.agents import initialize_agent, AgentType
+from nutritionist.tools.food_analyzer_tool import FoodImageAnalyzerTool
+from nutritionist.tools.user_registration_tool import UserRegistrationTool
+from nutritionist.tools.user_info_tool import UserInfoTool
+from nutritionist.tools.diet_plan_tool import DietPlanTool
+from nutritionist.tools.weight_update_tool import WeightUpdateTool
+from nutritionist.tools.meal_entry_tool import MealEntryTool
+from nutritionist.tools.report_tool import ReportTool
 
 load_dotenv()
 
@@ -30,7 +37,15 @@ class NutritionistAgent:
 
         self.memory = SqliteMemory(session_id).history
         
-        self.tools = []
+        self.tools = [
+            FoodImageAnalyzerTool(),
+            UserRegistrationTool(),
+            UserInfoTool(),
+            DietPlanTool(),
+            WeightUpdateTool(),
+            MealEntryTool(),
+            ReportTool()
+        ]
         
         self.agent = initialize_agent(
             llm=self.llm,
