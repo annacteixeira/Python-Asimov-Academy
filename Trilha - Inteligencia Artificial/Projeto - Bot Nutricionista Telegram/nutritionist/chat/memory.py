@@ -4,10 +4,10 @@ from langchain_community.chat_message_histories import SQLChatMessageHistory
 MEMORY_KEY ='chat_history'
 
 class SqliteMemory(SQLChatMessageHistory):
-    def __init__(self, session_id: str, db_path: str = 'sqlite:///memory.db'):
+    def __init__(self, session_id: str, db_path: str = "sqlite:///memory.db"):
         super().__init__(
             session_id=session_id, 
-            connection=db_path
+            connection_string=db_path
         )
         
         self.history = ConversationBufferMemory(
