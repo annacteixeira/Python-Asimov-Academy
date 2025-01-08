@@ -1,11 +1,11 @@
 from typing import Optional
 from langchain.tools import BaseTool
 from langchain_openai import ChatOpenAI
-from nutritionist.models.user import User
-from nutritionist.repositories.user import UserRepository
-from nutritionist.repositories.meal_entry import MealEntryReppository
-from nutritionist.repositories.report import ReportRepository
-from nutritionist.repositories.weight_history import WeightHistoryRepository
+from models.user import User
+from repositories.user import UserRepository
+from repositories.meal_entry import MealEntryReppository
+from repositories.report import ReportRepository
+from repositories.weight_history import WeightHistoryRepository
 
 class ReportTool(BaseTool):
     name: str = 'report_tool'
