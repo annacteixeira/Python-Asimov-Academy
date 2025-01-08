@@ -2,8 +2,8 @@ import json
 from typing import Optional, List
 from tinydb import Query
 from datetime import datetime
-from nutritionist.models import Report
-from nutritionist.repositories.base_repository import BaseRepository
+from models import Report
+from repositories.base_repository import BaseRepository
 
 class ReportRepository(BaseRepository):
     def __init__(self) -> None:
