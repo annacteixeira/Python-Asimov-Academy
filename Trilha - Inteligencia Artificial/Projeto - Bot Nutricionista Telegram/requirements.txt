@@ -1,0 +1,12 @@
+tinydb
+pydantic
+langchain-community
+langchainhub
+langgraph
+langchain-openai
+langchain
+langchain-core
+python-dotenv
+pillow
+pyrogram
+tgcrypto
