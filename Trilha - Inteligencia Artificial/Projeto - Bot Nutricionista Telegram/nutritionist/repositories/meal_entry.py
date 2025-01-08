@@ -1,10 +1,11 @@
+import json
 from typing import Optional, List
 from tinydb import Query
 from datetime import datetime
 from nutritionist.models import MealEntry
 from nutritionist.repositories.base_repository import BaseRepository
 
-class MealEntry(BaseRepository):
+class MealEntryReppository(BaseRepository):
     def __init__(self):
         super().__init__()
         self.meal_entry_table = self.get_table('meal_entries')
@@ -28,7 +29,7 @@ class MealEntry(BaseRepository):
             proteins=proteins,
             fats=fats
         )
-        self.meal_entry_table.insert(meal_entry.model_dump())
+        self.meal_entry_table.insert(json.loads(meal_entry.model_dump_json()))
         
         return meal_entry
     
@@ -48,6 +49,12 @@ class MealEntry(BaseRepository):
     def update_meal_entry(self, meal_entry_id: int, **kwargs) -> None:
         MealEntryQuery = Query()
         self.meal_entry_table.update(kwargs, MealEntryQuery.id == meal_entry_id)
+        
+    def get_meal_entry_by_id(self, meal_entry_id: int) -> Optional[MealEntry]:
+        MealEntryQuery = Query()
+        result = self.meal_entry_table.search(MealEntryQuery.user_id == meal_entry_id)
+        
+        return result
         
     def delete_meal_entry(self, meal_entry_id: int) -> None:
         MealEntryQuery = Query()

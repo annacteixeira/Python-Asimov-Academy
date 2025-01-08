@@ -1,3 +1,4 @@
+import json
 from typing import Optional, List
 from tinydb import Query
 from datetime import datetime
@@ -15,7 +16,7 @@ class ReportRepository(BaseRepository):
             content=content,
         )
         
-        self.report_table.insert(report.model_dump())
+        self.report_table.insert(json.loads(report.model_dump_json()))
         
         return report
     
