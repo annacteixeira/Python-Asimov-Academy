@@ -1,6 +1,6 @@
 from langchain.tools import BaseTool
-from nutritionist.repositories.user import UserRepository
-from nutritionist.repositories.weight_history import WeightHistoryRepository
+from repositories.user import UserRepository
+from repositories.weight_history import WeightHistoryRepository
 
 class WeightUpdateTool(BaseTool):
     name: str = 'weight_update'
