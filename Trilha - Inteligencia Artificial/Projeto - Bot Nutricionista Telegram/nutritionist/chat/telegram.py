@@ -52,7 +52,7 @@ class TelegramBot:
     
     async def start(self, client: Client, message: Message):
         await message.reply_text(
-            'Olá! Eu sou sua IA Nutricionista. Envie uma mensagem ou uma foto de um prato de comida para começar.'
+            'Olá! Eu sou o seu Assistente Pessoal. Como posso te ajudar hoje?'
         )
         self.logger.info(f'Usuário {message.from_user.id} iniciou uma conversa.')
         

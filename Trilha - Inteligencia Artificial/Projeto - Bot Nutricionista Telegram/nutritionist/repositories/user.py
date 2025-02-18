@@ -62,7 +62,7 @@ class UserRepository(BaseRepository):
         }
         
         UserQuery = Query()
-        self.user_table.update(update_data, UserQuery.id == telegram_id)
+        self.user_table.update(update_data, UserQuery.telegram_id == telegram_id)
         
     def delete_user(self, user_id: int) -> None:
         UserQuery = Query()
